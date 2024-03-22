@@ -8,6 +8,8 @@
 }
 #title {
   font-size: 100px;
+  border-bottom: solid 5px rgba(255, 255, 255, 0.445);
+  border-radius: 20px;
 }
 @media screen and (max-width: 768px) {
   #title {
@@ -24,7 +26,7 @@
   transition: transform 0.5s;
 }
 #weatherCol :hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 #weatherCard {
   background-color: rgba(255, 255, 255, 0.37);
@@ -39,4 +41,20 @@ body {
 }
 #navBar {
   background-color: rgba(255, 255, 255, 0.356);
+}
+
+#weatherSpec {
+  font-size: 50px;
+  border-bottom: solid 5px rgba(255, 255, 255, 0.445);
+  border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  #weatherSpec {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 430px) {
+  #weatherSpec {
+    font-size: 25px;
+  }
 }

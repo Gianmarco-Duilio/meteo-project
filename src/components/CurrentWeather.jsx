@@ -52,37 +52,37 @@ function CurrentWeather({ city }) {
                 </Col>{" "}
               </Card>
 
-              <Col xs={12} md={6} lg={3} id="weatherCol" className="mt-3 g-4">
+              <Col xs={12} md={6} id="weatherCol" className="mt-3 g-4">
                 <Card id="weatherCard" className="w-100 h-100 text-center m-1 p-2 rounded-5">
-                  <Card.Text className="fw-bold fs-4">
+                  <Card.Text id="weatherSpec" className="fw-bold">
                     Temp. <FaTemperatureHigh />
-                  </Card.Text>
-                  <Card.Text className="fw-medium fs-5">{weatherToday.main.temp}°C</Card.Text>
+                  </Card.Text>{" "}
+                  <Card.Text className="fw-medium fs-1">{weatherToday.main.temp}°C</Card.Text>
                 </Card>
               </Col>
-              <Col xs={12} md={6} lg={3} id="weatherCol" className="mt-3 g-4">
+              <Col xs={12} md={6} id="weatherCol" className="mt-3 g-4">
                 <Card id="weatherCard" className="w-100 h-100 text-center m-1 p-2 rounded-5">
-                  <Card.Text className="fw-bold fs-4">
+                  <Card.Text id="weatherSpec" className="fw-bold">
                     Humidity <RiWaterPercentLine />
                   </Card.Text>
-                  <Card.Text className="fw-medium fs-5">{weatherToday.main.humidity}%</Card.Text>
+                  <Card.Text className="fw-medium fs-1">{weatherToday.main.humidity}%</Card.Text>
                 </Card>
               </Col>
-              <Col xs={12} md={6} lg={3} id="weatherCol" className="mt-3 g-4">
+              <Col xs={12} md={6} id="weatherCol" className="mt-3 g-4">
                 <Card id="weatherCard" className="w-100 h-100 text-center m-1 p-2 rounded-5">
-                  <Card.Text className="fw-bold fs-4">
+                  <Card.Text id="weatherSpec" className="fw-bold">
                     Pressure <IoSpeedometerOutline />
                   </Card.Text>
-                  <Card.Text className="fw-medium fs-5">{weatherToday.main.pressure} hPa</Card.Text>
+                  <Card.Text className="fw-medium fs-1">{weatherToday.main.pressure} hPa</Card.Text>
                 </Card>
               </Col>
-              <Col xs={12} md={6} lg={3} id="weatherCol" className="mt-3 g-4">
+              <Col xs={12} md={6} id="weatherCol" className="mt-3 g-4">
                 <Card id="weatherCard" className="w-100 h-100 text-center m-1 p-2 rounded-5">
-                  <Card.Text className="fw-bold fs-4">
+                  <Card.Text id="weatherSpec" className="fw-bold">
                     {" "}
                     Wind <LuWind />
                   </Card.Text>
-                  <Card.Text className="fw-medium fs-5">
+                  <Card.Text className="fw-medium fs-1">
                     {weatherToday.wind.speed} m/s, {weatherToday.wind.deg}°
                   </Card.Text>
                 </Card>
